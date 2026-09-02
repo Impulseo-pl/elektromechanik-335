@@ -1760,8 +1760,8 @@ footer{view-transition-name:mt-foot}
 .ha-cta-tel{color:#fff;border:1px solid rgba(255,255,255,.5);background:rgba(10,14,18,.35);
   backdrop-filter:blur(6px);font-variant-numeric:tabular-nums;letter-spacing:.02em}
 .ha-cta-tel:hover{background:rgba(10,14,18,.6);border-color:rgba(255,255,255,.85)}
-.hero-auto .ha-veil{background:linear-gradient(100deg,rgba(8,12,16,.86) 0%,rgba(8,12,16,.62) 32%,rgba(8,12,16,.16) 62%,rgba(8,12,16,.30) 100%)}
-.hero-auto .ha-bg{filter:saturate(1.06) contrast(1.04)}
+.hero-auto .ha-veil{background:linear-gradient(100deg,rgba(6,9,12,.90) 0%,rgba(6,9,12,.72) 30%,rgba(6,9,12,.28) 60%,rgba(6,9,12,.52) 100%),radial-gradient(120% 90% at 70% 45%,transparent 30%,rgba(4,6,9,.55) 100%)}
+.hero-auto .ha-bg{filter:saturate(.96) contrast(1.06)}
 .ha-cta-row .ha-cta,.ha-cta-row .ha-cta-tel{margin-top:0}
 .ha-cta-row{margin-top:var(--space-6)}
 
