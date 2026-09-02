@@ -3,194 +3,426 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elektromechanik 335 - elektryka i diagnostyka samochodowa</title>
-<meta name="description" content="Warsztat samochodowy w Sierakowie: przeglądy, naprawy mechaniczne, diagnostyka, klimatyzacja, opony. Cenę znasz przed naprawą. Zadzwoń: +48 503 307 327.">
-<link rel="canonical" href="https://impulseo-pl.github.io/elektromechanik-335/">
+<title>Elektromechanik 335 — elektryk samochodowy, Sieraków</title>
+<meta name="description" content="Elektryk samochodowy w Sierakowie koło Dobczyc. Diagnostyka komputerowa, szukanie usterek elektrycznych, wtryski, naprawy mechaniczne. Cenę znasz przed robotą. 503 307 327.">
 <meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://impulseo-pl.github.io/elektromechanik-335/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:site_name" content="Elektromechanik 335">
-<meta property="og:title" content="Elektromechanik 335 - mechanika i diagnostyka">
-<meta property="og:description" content="Warsztat samochodowy w Sierakowie: przeglądy, naprawy mechaniczne, diagnostyka, klimatyzacja, opony. Cenę znasz przed naprawą. Zadzwoń: +48 503 307 327.">
+<meta property="og:title" content="Elektromechanik 335 - elektryk samochodowy, Sieraków">
+<meta property="og:description" content="Znajdę usterkę, zanim wymienisz pół auta. Diagnostyka i elektryka samochodowa w Sierakowie. 503 307 327.">
 <meta property="og:url" content="https://impulseo-pl.github.io/elektromechanik-335/">
 <meta property="og:image" content="https://impulseo-pl.github.io/elektromechanik-335/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "AutoRepair", "name": "Elektromechanik 335", "url": "https://impulseo-pl.github.io/elektromechanik-335/", "telephone": "+48503307327", "image": "https://impulseo-pl.github.io/elektromechanik-335/img/og.jpg", "address": "Sieraków 90b, 32-410 Dobczyce", "sameAs": ["https://maps.google.com/?cid=16810844491470130769"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Elektromechanik 335","url":"https://impulseo-pl.github.io/elektromechanik-335/","telephone":"+48503307327","email":"elektromechanik335@gmail.com","image":"https://impulseo-pl.github.io/elektromechanik-335/img/og.jpg","address":{"@type":"PostalAddress","streetAddress":"Sieraków 90b","postalCode":"32-410","addressLocality":"Dobczyce","addressCountry":"PL"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"11"},"sameAs":["https://maps.google.com/?cid=16810844491470130769"]}</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=506d2b94">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0b0e12; --ink-2:#12171d; --ink-3:#1a2128;
+  --paper:#f4f2ee; --paper-2:#e8e4dd;
+  --amber:#ffc22e; --amber-d:#e0a300;
+  --txt:#0b0e12; --txt-soft:#5a636d; --txt-inv:#f4f2ee; --txt-inv-soft:#9aa4ae;
+  --line:rgba(11,14,18,.12); --line-inv:rgba(244,242,238,.14);
+  --disp:"Barlow Condensed",Impact,sans-serif;
+  --body:"Inter",system-ui,-apple-system,Segoe UI,sans-serif;
+  --pad:clamp(1.25rem,5vw,5.5rem);
+  --wrap:1360px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--txt);font-family:var(--body);
+  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3{font-family:var(--disp);font-weight:700;text-transform:uppercase;
+  line-height:.95;letter-spacing:-.01em;margin:0}
+.eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--body);
+  font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--amber-d);margin-bottom:1rem}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--amber)}
+.on-dark .eyebrow{color:var(--amber)}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;inset:0 0 auto;z-index:60;transition:background .35s,box-shadow .35s,padding .35s;
+  padding:1.15rem 0}
+.nav.solid{background:rgba(11,14,18,.94);backdrop-filter:blur(14px);padding:.7rem 0;
+  box-shadow:0 1px 0 rgba(255,255,255,.09)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.mark{display:flex;align-items:baseline;gap:.5rem;text-decoration:none;color:#fff}
+.mark b{font-family:var(--disp);font-size:1.5rem;letter-spacing:.01em}
+.mark i{font-style:normal;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--amber);font-weight:600}
+.nav-links{display:flex;align-items:center;gap:1.9rem}
+.nav-links a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.8rem;font-weight:600;
+  letter-spacing:.13em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--amber)}
+.tel-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--amber);color:var(--ink);
+  padding:.72rem 1.35rem;border-radius:2px;font-weight:700;font-size:.84rem;letter-spacing:.05em;
+  text-decoration:none;font-variant-numeric:tabular-nums;transition:transform .18s,background .18s}
+.tel-btn:hover{background:#fff;transform:translateY(-1px)}
+@media(max-width:900px){.nav-links a:not(.tel-btn){display:none}}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;
+  background:var(--ink);overflow:hidden;isolation:isolate}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+  filter:grayscale(.18) contrast(1.08) brightness(.82);
+  animation:drift 26s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.04)}to{transform:scale(1.13) translateX(-1.5%)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(11,14,18,.82) 0%,rgba(11,14,18,.30) 32%,rgba(11,14,18,.72) 74%,rgba(11,14,18,.97) 100%),
+             linear-gradient(92deg,rgba(11,14,18,.86) 0%,rgba(11,14,18,.35) 52%,transparent 78%)}
+.hero-in{width:100%;padding-bottom:clamp(2.5rem,7vh,5rem);padding-top:9rem;color:#fff}
+.hero h1{font-size:clamp(3.1rem,9.2vw,8.6rem);max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--amber);display:block}
+.hero-lead{max-width:46ch;margin:1.6rem 0 2.2rem;color:rgba(255,255,255,.86);font-size:1.06rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.85rem;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:1.05rem 1.9rem;border-radius:2px;
+  text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase;
+  transition:transform .2s,background .2s,color .2s,border-color .2s}
+.btn-amber{background:var(--amber);color:var(--ink)}
+.btn-amber:hover{background:#fff;transform:translateY(-2px)}
+.btn-line{border:1px solid rgba(255,255,255,.42);color:#fff;font-variant-numeric:tabular-nums}
+.btn-line:hover{border-color:var(--amber);color:var(--amber)}
+.rating{display:inline-flex;align-items:center;gap:.6rem;margin-top:2.1rem;
+  background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);
+  padding:.5rem .9rem;border-radius:2px;font-size:.86rem;color:#fff}
+.rating b{font-size:1.05rem}
+.stars{color:var(--amber);letter-spacing:.08em}
+.scrollhint{position:absolute;right:var(--pad);bottom:2.2rem;z-index:2;writing-mode:vertical-rl;
+  font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+@media(max-width:760px){.scrollhint{display:none}}
+
+/* ---------- PASEK FAKTOW ---------- */
+.facts{background:var(--ink-2);color:#fff;border-top:1px solid var(--line-inv)}
+.facts-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.fact{padding:2.3rem var(--pad);border-right:1px solid var(--line-inv)}
+.fact:last-child{border-right:0}
+.fact b{display:block;font-family:var(--disp);font-size:2.5rem;color:var(--amber);line-height:1}
+.fact span{display:block;margin-top:.45rem;font-size:.82rem;color:var(--txt-inv-soft);
+  letter-spacing:.05em}
+@media(max-width:860px){.facts-grid{grid-template-columns:repeat(2,1fr)}
+  .fact:nth-child(2){border-right:0}.fact:nth-child(1),.fact:nth-child(2){border-bottom:1px solid var(--line-inv)}}
+
+/* ---------- USTERKI ---------- */
+.sec{padding:clamp(4.5rem,10vh,8.5rem) 0}
+.sec-head{max-width:60ch;margin-bottom:3.2rem}
+.sec-head h2{font-size:clamp(2.3rem,5.2vw,4.2rem)}
+.sec-head p{margin:1.2rem 0 0;color:var(--txt-soft);font-size:1.05rem}
+.usterki{display:grid;grid-template-columns:repeat(2,1fr);gap:0;
+  border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.ust{padding:2.6rem 2.2rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);
+  position:relative;transition:background .3s}
+.ust:hover{background:#fff}
+.ust .no{font-family:var(--disp);font-size:.95rem;color:var(--amber-d);letter-spacing:.1em}
+.ust h3{font-size:1.75rem;margin:.5rem 0 .7rem}
+.ust p{margin:0;color:var(--txt-soft);font-size:.97rem}
+@media(max-width:760px){.usterki{grid-template-columns:1fr}}
+
+/* ---------- SPLIT: WARSZTAT ---------- */
+.split{display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;
+  background:var(--ink);color:#fff}
+.split-img{position:relative;min-height:56vh}
+.split-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.split-txt{padding:clamp(3rem,7vw,6rem) var(--pad)}
+.split-txt h2{font-size:clamp(2.2rem,4.4vw,3.6rem)}
+.split-txt p{color:rgba(255,255,255,.78);max-width:44ch}
+.adres{margin-top:2rem;display:grid;gap:.9rem;font-size:.95rem}
+.adres div{display:flex;gap:.9rem;align-items:flex-start;padding-bottom:.9rem;
+  border-bottom:1px solid var(--line-inv)}
+.adres span:first-child{color:var(--amber);font-weight:600;min-width:8.5rem;font-size:.76rem;
+  letter-spacing:.13em;text-transform:uppercase;padding-top:.18rem}
+@media(max-width:900px){.split{grid-template-columns:1fr}.split-img{min-height:44vh}}
+
+/* ---------- GALERIA ---------- */
+.gal{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:10px}
+.gal figure{margin:0;overflow:hidden;background:var(--ink-3);position:relative}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.3,1);
+  filter:saturate(.94)}
+.gal figure:hover img{transform:scale(1.07)}
+.g-a{grid-column:span 2;grid-row:span 3}
+.g-b{grid-column:span 4;grid-row:span 2}
+.g-c{grid-column:span 2;grid-row:span 2}
+.g-d{grid-column:span 2;grid-row:span 2}
+.g-e{grid-column:span 3;grid-row:span 2}
+.g-f{grid-column:span 3;grid-row:span 2}
+@media(max-width:900px){.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}
+  .g-a,.g-b,.g-c,.g-d,.g-e,.g-f{grid-column:span 2;grid-row:span 2}}
+
+/* ---------- OPINIE ---------- */
+.opinie{background:var(--ink);color:#fff}
+.op-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--line-inv)}
+.op{background:var(--ink);padding:3rem 2.4rem}
+.op .stars{font-size:1.05rem}
+.op blockquote{margin:1.2rem 0 1.6rem;font-size:1.24rem;line-height:1.5;font-weight:500}
+.op cite{font-style:normal;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--txt-inv-soft)}
+@media(max-width:760px){.op-grid{grid-template-columns:1fr}}
+
+/* ---------- PROCES ---------- */
+.kroki{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;counter-reset:k}
+.krok{counter-increment:k;padding-top:2rem;border-top:2px solid var(--ink)}
+.krok::before{content:"0" counter(k);font-family:var(--disp);font-size:2.6rem;color:var(--amber-d);
+  display:block;line-height:1;margin-bottom:.7rem}
+.krok h3{font-size:1.35rem;margin-bottom:.5rem}
+.krok p{margin:0;color:var(--txt-soft);font-size:.95rem}
+@media(max-width:900px){.kroki{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.kroki{grid-template-columns:1fr}}
+
+/* ---------- CTA ---------- */
+.cta{position:relative;background:var(--ink);color:#fff;overflow:hidden;isolation:isolate;
+  text-align:center;padding:clamp(4.5rem,11vh,8rem) 0}
+.cta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;
+  filter:grayscale(.3) brightness(.4)}
+.cta::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:radial-gradient(80% 100% at 50% 50%,rgba(11,14,18,.72),rgba(11,14,18,.96))}
+.cta h2{font-size:clamp(2.4rem,6vw,5rem)}
+.cta p{max-width:48ch;margin:1.3rem auto 2.4rem;color:rgba(255,255,255,.82)}
+.cta .hero-cta{justify-content:center}
+
+/* ---------- STOPKA ---------- */
+footer{background:var(--ink-2);color:var(--txt-inv-soft);padding:3.4rem 0 2.2rem;font-size:.9rem}
+.foot{display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start}
+.foot a{color:rgba(255,255,255,.8);text-decoration:none}
+.foot a:hover{color:var(--amber)}
+.foot-bot{margin-top:2.6rem;padding-top:1.4rem;border-top:1px solid var(--line-inv);
+  display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;font-size:.8rem}
+
+/* ---------- MOBILNY PASEK ---------- */
+.mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;
+  background:rgba(11,14,18,.97);backdrop-filter:blur(12px);padding:.65rem;gap:.55rem;
+  border-top:1px solid var(--line-inv)}
+.mobile-bar a{flex:1;text-align:center;padding:.85rem;border-radius:2px;text-decoration:none;
+  font-weight:700;font-size:.84rem;letter-spacing:.05em;text-transform:uppercase}
+.mobile-bar .m-tel{background:var(--amber);color:var(--ink)}
+.mobile-bar .m-map{border:1px solid rgba(255,255,255,.32);color:#fff}
+@media(max-width:760px){.mobile-bar{display:flex}body{padding-bottom:4.6rem}}
+
+/* ---------- REVEAL ---------- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.3,1),transform .8s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.hero-img{animation:none}}
+
+.demo-tag{position:fixed;right:14px;top:auto;bottom:14px;z-index:80;display:none;align-items:center;
+  gap:.5rem;background:rgba(11,14,18,.9);color:#fff;border:1px solid rgba(255,255,255,.18);
+  backdrop-filter:blur(10px);padding:.5rem .8rem;border-radius:2px;font-size:.74rem;
+  letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.demo-tag b{color:var(--amber)}
+@media(max-width:760px){.demo-tag{bottom:5.4rem}}
+</style>
 </head>
 <body>
 
-<header class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="index.html"><span class="name">Elektromechanik 335</span><span class="sub">Sieraków</span></a>
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="mark" href="#gora"><b>Elektromechanik 335</b><i>Sieraków</i></a>
     <nav class="nav-links">
-      <a href="oferta.html">Usługi</a>
-      <a href="realizacje.html">Realizacje</a>
-      <a href="o-nas.html">O nas</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="kontakt.html" class="btn btn-accent">Umów termin</a>
+      <a href="#usterki">Usterki</a>
+      <a href="#warsztat">Warsztat</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#opinie">Opinie</a>
+      <a class="tel-btn" href="tel:+48503307327">503 307 327</a>
     </nav>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<main>
-<section class="hero-auto">
-  <img class="ha-bg" src="img/hero.jpg" fetchpriority="high" alt="Warsztat Elektromechanik 335 w Sierakowie" width="1920" height="1080">
-  <div class="ha-veil"></div>
-  <div class="ha-inner">
-    <span class="ha-tick" aria-hidden="true"></span>
-    <span class="ha-kicker">Sieraków &middot; Elektryk samochodowy</span>
-    <h1 class="ha-claim">Diagnostyka i naprawa. Cenę znasz przed robotą.</h1>
-    <div class="ha-cta-row"><a href="kontakt.html" class="btn btn-accent ha-cta">Umów termin <span class="arr">→</span></a><a href="tel:+48503307327" class="btn btn-ghost ha-cta-tel">503 307 327</a></div>
-      <p class="ha-rating"><span class="g-badge"><svg class="gb-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg><b class="gb-ocena">4,7</b><svg class="gb-stars" viewBox="0 0 90 18" width="74" height="14.8" aria-hidden="true"><g fill="currentColor" opacity=".26"><path transform="translate(0,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(18,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(36,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(54,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(72,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/></g><clipPath id="gs940"><rect x="0" y="0" width="84.6" height="18"/></clipPath><g fill="#FBBC04" clip-path="url(#gs940)"><path transform="translate(0,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(18,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(36,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(54,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(72,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/></g></svg><span class="gb-txt">11 opinii w Google</span></span></p>
-  </div>
-</section>
-<section class="spec-ribbon">
-  <div class="wrap">
-    <ul class="sr-row reveal"><li>Szukanie usterek elektrycznych</li><li>Diagnostyka komputerowa</li><li>Wtryski i układ paliwowy</li><li>Rozruch, alternatory, akumulatory</li><li>Naprawy mechaniczne</li><li>Oleje, klimatyzacja, opony</li></ul>
-  </div>
-</section>
-<section class="opinie-mini" aria-label="Opinie klientów">
-  <div class="wrap">
-    <div class="om-row">
-      <div class="om-item reveal"><blockquote>„Najlepszy mechanik u jakiego byłem.”</blockquote><span class="om-autor">Piotr Kuciara</span></div>
-      <div class="om-item reveal"><blockquote>„Jeden z najlepszych elektromechaników w okolicy szybka diagnoza i wymiana !”</blockquote><span class="om-autor">rafal piorecki</span></div>
+<section class="hero" id="gora">
+  <img class="hero-img" src="img/hero.jpg" alt="Warsztat samochodowy" fetchpriority="high" width="1920" height="1080">
+  <div class="wrap hero-in">
+    <span class="eyebrow" style="color:var(--amber)">Sieraków k. Dobczyc · elektryk samochodowy</span>
+    <h1>Znajdę usterkę<em>zanim wymienisz pół auta</em></h1>
+    <p class="hero-lead">Elektryka rzadko jest jedną zepsutą częścią. Częściej to jedna zła masa
+      albo przetarty przewód. Podpinam komputer, mierzę i szukam do skutku — a cenę mówię, zanim zacznę.</p>
+    <div class="hero-cta">
+      <a class="btn btn-amber" href="tel:+48503307327">Zadzwoń — 503 307 327</a>
+      <a class="btn btn-line" href="#kontakt">Umów termin</a>
+    </div>
+    <div class="rating">
+      <span class="stars">★★★★★</span><b>4,7</b><span style="color:rgba(255,255,255,.72)">11 opinii w Google</span>
     </div>
   </div>
+  <span class="scrollhint">Przewiń</span>
 </section>
-<section class="gateways-band">
-  <div class="wrap">
-    <div class="gateways">
-      <a href="oferta.html" class="gateway reveal"><img src="img/k1.jpg" alt="Naprawa instalacji elektrycznej w desce rozdzielczej" loading="lazy" width="900" height="1200" decoding="async"><span class="g-ttl">Elektryka i diagnostyka<small>Szukanie usterki, sterowniki, instalacja</small></span></a>
-      <a href="oferta.html" class="gateway reveal"><img src="img/k2.jpg" alt="Praca w komorze silnika" loading="lazy" width="900" height="1200" decoding="async"><span class="g-ttl">Naprawy mechaniczne<small>Silnik, rozrząd, układ paliwowy</small></span></a>
-      <a href="oferta.html" class="gateway reveal"><img src="img/k3.jpg" alt="Auto rozebrane do naprawy w warsztacie" loading="lazy" width="900" height="1200" decoding="async"><span class="g-ttl">Obsługa i przeglądy<small>Oleje, płyny, klimatyzacja, opony</small></span></a>
-    </div>
+
+<section class="facts">
+  <div class="facts-grid">
+    <div class="fact"><b>4,7</b><span>Ocena w Google</span></div>
+    <div class="fact"><b>11</b><span>Opinii od klientów</span></div>
+    <div class="fact"><b>Sieraków</b><span>Własna hala, 90b</span></div>
+    <div class="fact"><b>0 zł</b><span>Za wycenę przed naprawą</span></div>
   </div>
 </section>
-<section class="usterki">
+
+<section class="sec" id="usterki">
   <div class="wrap">
-    <div class="head reveal">
+    <div class="sec-head rv">
       <span class="eyebrow">Z czym do mnie przyjeżdżają</span>
       <h2>Auto gaśnie, świeci kontrolka, nikt nie wie dlaczego</h2>
-      <p>Elektryka to najczęściej nie jedna zepsuta część, tylko jedna zła masa albo przetarty przewód. Podpinam komputer, sprawdzam mierzę i szukam do skutku - zamiast wymieniać po kolei podzespoły na Twój koszt.</p>
+      <p>Odczyt błędów to początek, nie diagnoza. Zanim cokolwiek wymienię, sprawdzam czujnik,
+        przewód i sterownik — żebyś nie płacił za części, które były sprawne.</p>
     </div>
-    <ul class="ust-grid">
-      <li class="reveal"><h3>Auto nie odpala</h3><p>Rozrusznik, alternator, akumulator, masy i przewody - sprawdzam, co naprawdę nie dowozi prądu.</p></li>
-      <li class="reveal"><h3>Świeci check engine</h3><p>Odczyt błędów to początek, nie diagnoza. Sprawdzam czujnik, przewód i sterownik, zanim cokolwiek wymienię.</p></li>
-      <li class="reveal"><h3>Silnik szarpie i dymi</h3><p>Wtryski, układ paliwowy, zapłon. Rozbieram, mierzę i mówię, co jest do naprawy, a co do wymiany.</p></li>
-      <li class="reveal"><h3>Coś siada po deszczu</h3><p>Zawilgocone złącza i przetarte wiązki w drzwiach czy desce. Rozbieram i doprowadzam instalację do porządku.</p></li>
-    </ul>
+    <div class="usterki">
+      <div class="ust rv"><span class="no">01</span><h3>Auto nie odpala</h3>
+        <p>Rozrusznik, alternator, akumulator, masy i przewody. Sprawdzam, co naprawdę nie dowozi prądu, zamiast wymieniać po kolei.</p></div>
+      <div class="ust rv"><span class="no">02</span><h3>Świeci check engine</h3>
+        <p>Podpinam diagnostykę, czytam błędy i idę dalej — do czujnika, wiązki i sterownika. Mówię, co jest przyczyną, a co tylko skutkiem.</p></div>
+      <div class="ust rv"><span class="no">03</span><h3>Silnik szarpie i dymi</h3>
+        <p>Wtryski, układ paliwowy, zapłon. Rozbieram, mierzę i mówię, co da się naprawić, a co trzeba wymienić.</p></div>
+      <div class="ust rv"><span class="no">04</span><h3>Coś siada po deszczu</h3>
+        <p>Zawilgocone złącza i przetarte wiązki w drzwiach albo w desce. Rozbieram i doprowadzam instalację do porządku.</p></div>
+    </div>
   </div>
 </section>
-<section class="proces proces-os auto">
-  <div class="wrap proc-grid">
-    <div class="proc-side">
-      <div class="head reveal">
-        <span class="eyebrow">Jak pracujemy</span>
-        <h2>Twoje auto w dobrych rękach</h2>
-        <p>Od przyjęcia auta do odbioru wiesz, na jakim etapie jest naprawa.</p>
-      </div>
-      <div class="proc-count" aria-hidden="true"><span class="pc-cur">01</span><span class="pc-all">/ 04</span></div>
-      <div class="proc-bar" aria-hidden="true"><i></i></div>
-      <p class="proc-now" aria-hidden="true">Umów termin</p>
+
+<section class="split" id="warsztat">
+  <div class="split-img"><img src="img/g1.jpg" alt="Budynek warsztatu Elektromechanik 335 w Sierakowie" loading="lazy"></div>
+  <div class="split-txt on-dark">
+    <span class="eyebrow">Tu zostawiasz auto</span>
+    <h2>Własna hala w Sierakowie, nie plac pod chmurką</h2>
+    <p>Dwa stanowiska pod dachem, miejsce na postawienie auta i spokojna robota bez pośpiechu.
+      Przyjeżdżasz, oglądamy razem, umawiamy zakres — i wtedy zaczynam.</p>
+    <div class="adres">
+      <div><span>Adres</span><span>Sieraków 90b, 32-410 Dobczyce</span></div>
+      <div><span>Telefon</span><span><a href="tel:+48503307327" style="text-decoration:none">+48 503 307 327</a></span></div>
+      <div><span>E-mail</span><span><a href="mailto:elektromechanik335@gmail.com" style="text-decoration:none">elektromechanik335@gmail.com</a></span></div>
+      <div style="border:0"><span>Dojazd</span><span><a href="https://maps.google.com/?cid=16810844491470130769" target="_blank" rel="noopener">Otwórz w Mapach Google →</a></span></div>
     </div>
-    <ol class="proces-line">
-      <li class="reveal"><span class="pno">01</span><h3>Umów termin</h3><p>Zadzwoń lub napisz - dobierzemy dogodną datę.</p></li>
-      <li class="reveal"><span class="pno">02</span><h3>Diagnoza i wycena</h3><p>Oglądamy auto, doradzamy zakres i podajemy jasną cenę.</p></li>
-      <li class="reveal"><span class="pno">03</span><h3>Wykonanie usługi</h3><p>Pracujemy dokładnie, na sprawdzonych produktach i sprzęcie.</p></li>
-      <li class="reveal"><span class="pno">04</span><h3>Odbiór auta</h3><p>Sprawdzamy efekt razem z Tobą i oddajemy auto gotowe do drogi.</p></li>
-    </ol>
   </div>
 </section>
-<section class="stopklatka" aria-hidden="true">
-  <div class="stk-bg" style="background-image:url(img/stk.jpg)"></div>
-</section>
-<section>
+
+<section class="sec" id="realizacje">
   <div class="wrap">
-    <div class="head reveal">
+    <div class="sec-head rv">
       <span class="eyebrow">Realizacje</span>
-      <h2>Zdjęcia z napraw</h2>
-      <p>Zdjęcia z mojej hali, nie z banku zdjęć producenta. Tak wygląda miejsce, w którym zostawisz auto.</p>
+      <h2>Zdjęcia z mojej hali</h2>
+      <p>Nie z banku zdjęć producenta. Tak wygląda robota, którą u mnie zostawiasz.</p>
     </div>
-    <div class="gallery">
-      <div class="tile t-two3 reveal"><img src="img/g1.jpg" alt="Warsztat Elektromechanik 335 w Sierakowie" loading="lazy" width="1600" height="2133" decoding="async"></div>
-      <div class="tile t-third reveal"><img src="img/g2.jpg" alt="Rozebrana pompa wtryskowa" loading="lazy" width="1532" height="614" decoding="async"></div>
-      <div class="tile t-third reveal"><img src="img/g6.jpg" alt="Komora silnika przygotowana do naprawy" loading="lazy" width="1534" height="620" decoding="async"></div>
-      <div class="tile t-third reveal"><img src="img/g4.jpg" alt="Naprawa w hali warsztatu" loading="lazy" width="1600" height="722" decoding="async"></div>
-      <div class="tile t-third reveal"><img src="img/g5.jpg" alt="Komora silnika w trakcie naprawy" loading="lazy" width="1600" height="722" decoding="async"></div>
+    <div class="gal rv">
+      <figure class="g-a"><img src="img/g3.jpg" alt="Naprawa instalacji elektrycznej w desce rozdzielczej" loading="lazy"></figure>
+      <figure class="g-b"><img src="img/g4.jpg" alt="Naprawa w hali warsztatu" loading="lazy"></figure>
+      <figure class="g-c"><img src="img/g2.jpg" alt="Rozebrana pompa wtryskowa" loading="lazy"></figure>
+      <figure class="g-d"><img src="img/g8.jpg" alt="Praca w komorze silnika" loading="lazy"></figure>
+      <figure class="g-e"><img src="img/g7.jpg" alt="Auto rozebrane do naprawy" loading="lazy"></figure>
+      <figure class="g-f"><img src="img/g5.jpg" alt="Komora silnika w trakcie naprawy" loading="lazy"></figure>
     </div>
-    <div style="margin-top:var(--space-7)" class="reveal"><a href="realizacje.html" class="btn btn-accent">Pełna galeria <span class="arr">→</span></a></div>
   </div>
 </section>
-<section class="opinie">
+
+<section class="sec opinie" id="opinie">
   <div class="wrap">
-    <div class="head center reveal">
+    <div class="sec-head on-dark rv">
       <span class="eyebrow">Opinie</span>
       <h2>Co mówią klienci</h2>
+      <p style="color:rgba(255,255,255,.72)">Wszystkie opinie pochodzą z wizytówki Google —
+        <a href="https://maps.google.com/?cid=16810844491470130769" target="_blank" rel="noopener" style="color:var(--amber)">możesz je sprawdzić</a>.</p>
     </div>
-    <p class="op-meta reveal"><span class="g-badge"><svg class="gb-ico" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg><b class="gb-ocena">4,7</b><svg class="gb-stars" viewBox="0 0 90 18" width="74" height="14.8" aria-hidden="true"><g fill="currentColor" opacity=".26"><path transform="translate(0,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(18,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(36,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(54,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(72,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/></g><clipPath id="gs940"><rect x="0" y="0" width="84.6" height="18"/></clipPath><g fill="#FBBC04" clip-path="url(#gs940)"><path transform="translate(0,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(18,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(36,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(54,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/><path transform="translate(72,0)" d="M9 1.6l2.2 4.46 4.92.72-3.56 3.47.84 4.9L9 12.74l-4.4 2.31.84-4.9L1.88 6.68l4.92-.72L9 1.6Z"/></g></svg><span class="gb-txt">11 opinii w Google</span></span></p>
-    <p class="op-meta reveal"><a class="op-google" href="https://maps.google.com/?cid=16810844491470130769" target="_blank" rel="noopener"><svg class="op-g-ico" viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg><span>Zobacz opinie w Google</span><span class="arr">→</span></a></p>
-    <div class="opinie-grid">
-      <figure class="op-card reveal"><span class="op-star"><svg class="ico-star" width="14" height="14" viewBox="0 0 24 24" style="vertical-align:-2px" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg><svg class="ico-star" width="14" height="14" viewBox="0 0 24 24" style="vertical-align:-2px" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg><svg class="ico-star" width="14" height="14" viewBox="0 0 24 24" style="vertical-align:-2px" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg><svg class="ico-star" width="14" height="14" viewBox="0 0 24 24" style="vertical-align:-2px" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg><svg class="ico-star" width="14" height="14" viewBox="0 0 24 24" style="vertical-align:-2px" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg></span><blockquote>Najlepszy mechanik u jakiego byłem. Pierwszy, który zdiagnozował moje problemy z wtryskami. Rzeczowo ,fachowo i nie za miliony. Polecam</blockquote><span class="op-autor">Piotr Kuciara</span></figure>
-      <figure class="op-card reveal"><span class="op-star"><svg class="ico-star" width="14" height="14" viewBox="0 0 24 24" style="vertical-align:-2px" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg><svg class="ico-star" width="14" height="14" viewBox="0 0 24 24" style="vertical-align:-2px" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg><svg class="ico-star" width="14" height="14" viewBox="0 0 24 24" style="vertical-align:-2px" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg><svg class="ico-star" width="14" height="14" viewBox="0 0 24 24" style="vertical-align:-2px" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg><svg class="ico-star" width="14" height="14" viewBox="0 0 24 24" style="vertical-align:-2px" aria-hidden="true"><path d="M12 2.8l2.85 5.8 6.4.93-4.63 4.5 1.1 6.37L12 17.4l-5.72 3 1.1-6.37-4.63-4.5 6.4-.93L12 2.8Z" fill="currentColor"/></svg></span><blockquote>Jeden z najlepszych elektromechaników w okolicy szybka diagnoza i wymiana ! Silnik BMW N43 i N47 POLECAM tego pana !</blockquote><span class="op-autor">rafal piorecki</span></figure>
+    <div class="op-grid rv">
+      <figure class="op"><span class="stars">★★★★★</span>
+        <blockquote>„Najlepszy mechanik u jakiego byłem. Pierwszy, który zdiagnozował moje problemy
+          z wtryskami. Rzeczowo, fachowo i nie za miliony. Polecam."</blockquote>
+        <cite>Piotr Kuciara</cite></figure>
+      <figure class="op"><span class="stars">★★★★★</span>
+        <blockquote>„Jeden z najlepszych elektromechaników w okolicy, szybka diagnoza i wymiana!
+          Silnik BMW N43 i N47 — polecam tego pana!"</blockquote>
+        <cite>Rafał Piorecki</cite></figure>
     </div>
   </div>
 </section>
-<section class="cta">
+
+<section class="sec">
   <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">Umów się</span>
-      <h2>Umów auto na wizytę.</h2>
-      <p>Zadzwoń lub napisz - obejrzymy auto, doradzimy zakres i podamy jasną cenę. Bez zobowiązań.</p>
+    <div class="sec-head rv">
+      <span class="eyebrow">Jak to wygląda</span>
+      <h2>Cztery kroki, zero niespodzianek na fakturze</h2>
     </div>
-    <div class="cta-actions reveal">
-      <a href="kontakt.html" class="btn btn-light">Umów termin <span class="arr">→</span></a>
-      <a href="tel:+48503307327" class="btn btn-ghost btn-ghost-cta">+48 503 307 327</a>
+    <div class="kroki rv">
+      <div class="krok"><h3>Dzwonisz</h3><p>Mówisz, co się dzieje z autem. Umawiamy termin, który Ci pasuje.</p></div>
+      <div class="krok"><h3>Oglądam auto</h3><p>Diagnostyka i pomiary. Wiem, co jest, zanim cokolwiek rozkręcę.</p></div>
+      <div class="krok"><h3>Podaję cenę</h3><p>Zakres i kwota przed robotą. Dopiero jak się zgodzisz, zaczynam.</p></div>
+      <div class="krok"><h3>Odbierasz auto</h3><p>Pokazuję, co zostało zrobione i dlaczego. Bez pozycji, których nie zamawiałeś.</p></div>
     </div>
   </div>
 </section>
-</main>
+
+<section class="cta" id="kontakt">
+  <img src="img/stk.jpg" alt="" aria-hidden="true" loading="lazy">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--amber)">Umów się</span>
+    <h2>Zadzwoń i opisz, co się dzieje</h2>
+    <p>Powiesz, jak auto się zachowuje — powiem, co najprawdopodobniej jest i ile kosztuje sprawdzenie.
+      Rozmowa nic nie kosztuje.</p>
+    <div class="hero-cta">
+      <a class="btn btn-amber" href="tel:+48503307327">503 307 327</a>
+      <a class="btn btn-line" href="https://maps.google.com/?cid=16810844491470130769" target="_blank" rel="noopener">Jak dojechać</a>
+    </div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <div class="name">Elektromechanik 335</div>
-        <p>Od wymiany żarówki po rozrząd. Ty mówisz, co się dzieje z autem - ja mówię, co jest i ile zapłacisz.</p>
+    <div class="foot">
+      <div style="max-width:34ch">
+        <div style="font-family:var(--disp);font-size:1.6rem;color:#fff;text-transform:uppercase">Elektromechanik 335</div>
+        <p style="margin:.7rem 0 0">Elektryk samochodowy i diagnostyka. Sieraków 90b, 32-410 Dobczyce.</p>
       </div>
-      <div class="foot-col">
-        <h4>Nawigacja</h4>
-        <a href="oferta.html">Usługi</a>
-        <a href="realizacje.html">Realizacje</a>
-        <a href="o-nas.html">O nas</a>
-        <a href="kontakt.html">Kontakt</a>
+      <div>
+        <div style="color:#fff;font-weight:600;margin-bottom:.7rem">Kontakt</div>
+        <div><a href="tel:+48503307327">+48 503 307 327</a></div>
+        <div><a href="mailto:elektromechanik335@gmail.com">elektromechanik335@gmail.com</a></div>
+        <div><a href="https://maps.google.com/?cid=16810844491470130769" target="_blank" rel="noopener">Mapy Google →</a></div>
       </div>
-      <div class="foot-col">
-        <h4>Kontakt</h4>
-        <a href="tel:+48503307327">+48 503 307 327</a>
-        <a href="mailto:elektromechanik335@gmail.com">elektromechanik335@gmail.com</a>
-        <p>Sieraków 90b, 32-410 Dobczyce</p>
-        <a href="https://maps.google.com/?cid=16810844491470130769" target="_blank" rel="noopener">Jak dojechać →</a>
-      <div class="foot-soc">
-        <a class="soc" href="https://maps.google.com/?cid=16810844491470130769" target="_blank" rel="noopener" aria-label="Google - Elektromechanik 335"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" fill="currentColor"/></svg></a>
-      </div>
+      <div>
+        <div style="color:#fff;font-weight:600;margin-bottom:.7rem">Na stronie</div>
+        <div><a href="#usterki">Usterki</a></div>
+        <div><a href="#warsztat">Warsztat</a></div>
+        <div><a href="#realizacje">Realizacje</a></div>
+        <div><a href="#opinie">Opinie</a></div>
       </div>
     </div>
     <div class="foot-bot">
       <span>© 2026 Elektromechanik 335</span>
-      <span>Projekt strony: <a class="foot-credit" href="https://impulseo.pl" target="_blank" rel="noopener">Impulseo</a></span>
+      <span>Projekt strony: <a href="https://impulseo.pl" target="_blank" rel="noopener">Impulseo</a></span>
     </div>
   </div>
 </footer>
-<div class="sticky-reserve"><a class="sr-book" href="kontakt.html">Umów termin</a><a class="sr-call" href="tel:+48503307327" aria-label="Zadzwoń"><svg class="ico-tel" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/></svg></a></div>
-<div class="demo-wazne" data-do="2026-09-08" data-cykl="3" hidden><svg class="dw-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.6" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.2V12l3.3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="dw-txt"></span></div>
 
-<script src="assets/main.js"></script>
+<div class="demo-tag" id="demoTag" data-do="2026-09-08">
+  <span>Wersja pokazowa &middot; <b id="demoCzas"></b></span>
+</div>
+<div class="mobile-bar">
+  <a class="m-tel" href="tel:+48503307327">Zadzwoń</a>
+  <a class="m-map" href="https://maps.google.com/?cid=16810844491470130769" target="_blank" rel="noopener">Dojazd</a>
+</div>
+
+<script>
+const nav = document.getElementById('nav');
+const onScroll = () => nav.classList.toggle('solid', window.scrollY > 60);
+onScroll(); addEventListener('scroll', onScroll, {passive:true});
+
+const io = new IntersectionObserver((es) => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rv').forEach((el,i) => { el.style.transitionDelay = (i%4)*70 + 'ms'; io.observe(el); });
+
+const tag = document.getElementById('demoTag');
+if (tag) {
+  const koniec = new Date(tag.dataset.do + 'T23:59:59');
+  const tik = () => {
+    const ms = koniec - new Date();
+    if (ms <= 0) { tag.style.display = 'none'; return; }
+    const d = Math.floor(ms / 864e5), g = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
+    document.getElementById('demoCzas').textContent = d + ' dni ' + String(g).padStart(2,'0') + ':' + String(m).padStart(2,'0');
+    tag.style.display = 'flex';
+  };
+  tik(); setInterval(tik, 30000);
+}
+</script>
 </body>
 </html>

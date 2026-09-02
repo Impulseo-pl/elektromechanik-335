@@ -6,6 +6,19 @@
 <title>Elektromechanik 335 — elektryk samochodowy, Sieraków</title>
 <meta name="description" content="Elektryk samochodowy w Sierakowie koło Dobczyc. Diagnostyka komputerowa, szukanie usterek elektrycznych, wtryski, naprawy mechaniczne. Cenę znasz przed robotą. 503 307 327.">
 <meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://impulseo-pl.github.io/elektromechanik-335/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Elektromechanik 335">
+<meta property="og:title" content="Elektromechanik 335 - elektryk samochodowy, Sieraków">
+<meta property="og:description" content="Znajdę usterkę, zanim wymienisz pół auta. Diagnostyka i elektryka samochodowa w Sierakowie. 503 307 327.">
+<meta property="og:url" content="https://impulseo-pl.github.io/elektromechanik-335/">
+<meta property="og:image" content="https://impulseo-pl.github.io/elektromechanik-335/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Elektromechanik 335","url":"https://impulseo-pl.github.io/elektromechanik-335/","telephone":"+48503307327","email":"elektromechanik335@gmail.com","image":"https://impulseo-pl.github.io/elektromechanik-335/img/og.jpg","address":{"@type":"PostalAddress","streetAddress":"Sieraków 90b","postalCode":"32-410","addressLocality":"Dobczyce","addressCountry":"PL"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"11"},"sameAs":["https://maps.google.com/?cid=16810844491470130769"]}</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -196,6 +209,13 @@ footer{background:var(--ink-2);color:var(--txt-inv-soft);padding:3.4rem 0 2.2rem
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.3,1),transform .8s cubic-bezier(.2,.7,.3,1)}
 .rv.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.hero-img{animation:none}}
+
+.demo-tag{position:fixed;right:14px;top:auto;bottom:14px;z-index:80;display:none;align-items:center;
+  gap:.5rem;background:rgba(11,14,18,.9);color:#fff;border:1px solid rgba(255,255,255,.18);
+  backdrop-filter:blur(10px);padding:.5rem .8rem;border-radius:2px;font-size:.74rem;
+  letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.demo-tag b{color:var(--amber)}
+@media(max-width:760px){.demo-tag{bottom:5.4rem}}
 </style>
 </head>
 <body>
@@ -373,6 +393,9 @@ footer{background:var(--ink-2);color:var(--txt-inv-soft);padding:3.4rem 0 2.2rem
   </div>
 </footer>
 
+<div class="demo-tag" id="demoTag" data-do="2026-09-08">
+  <span>Wersja pokazowa &middot; <b id="demoCzas"></b></span>
+</div>
 <div class="mobile-bar">
   <a class="m-tel" href="tel:+48503307327">Zadzwoń</a>
   <a class="m-map" href="https://maps.google.com/?cid=16810844491470130769" target="_blank" rel="noopener">Dojazd</a>
@@ -387,6 +410,19 @@ const io = new IntersectionObserver((es) => {
   es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
 }, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
 document.querySelectorAll('.rv').forEach((el,i) => { el.style.transitionDelay = (i%4)*70 + 'ms'; io.observe(el); });
+
+const tag = document.getElementById('demoTag');
+if (tag) {
+  const koniec = new Date(tag.dataset.do + 'T23:59:59');
+  const tik = () => {
+    const ms = koniec - new Date();
+    if (ms <= 0) { tag.style.display = 'none'; return; }
+    const d = Math.floor(ms / 864e5), g = Math.floor(ms / 36e5) % 24, m = Math.floor(ms / 6e4) % 60;
+    document.getElementById('demoCzas').textContent = d + ' dni ' + String(g).padStart(2,'0') + ':' + String(m).padStart(2,'0');
+    tag.style.display = 'flex';
+  };
+  tik(); setInterval(tik, 30000);
+}
 </script>
 </body>
 </html>
