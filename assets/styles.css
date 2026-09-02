@@ -1753,3 +1753,28 @@ footer{view-transition-name:mt-foot}
 .btn-accent{color:#fff}
 .nav .nav-links a.btn-accent{color:#fff}
 .btn-accent[data-accent-d],.cta-d .btn-accent{color:#fff}
+
+
+/* --- Elektromechanik 335: sekcja usterek + hero CTA --- */
+.ha-cta-row{display:flex;flex-wrap:wrap;gap:.7rem;align-items:center}
+.ha-cta-tel{color:#fff;border:1px solid rgba(255,255,255,.5);background:rgba(10,14,18,.35);
+  backdrop-filter:blur(6px);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.ha-cta-tel:hover{background:rgba(10,14,18,.6);border-color:rgba(255,255,255,.85)}
+.hero-auto .ha-veil{background:linear-gradient(100deg,rgba(8,12,16,.86) 0%,rgba(8,12,16,.62) 32%,rgba(8,12,16,.16) 62%,rgba(8,12,16,.30) 100%)}
+.hero-auto .ha-bg{filter:saturate(1.06) contrast(1.04)}
+.ha-cta-row .ha-cta,.ha-cta-row .ha-cta-tel{margin-top:0}
+.ha-cta-row{margin-top:var(--space-6)}
+
+.usterki{padding:var(--space-9) 0}
+.ust-grid{list-style:none;margin:var(--space-7) 0 0;padding:0;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-4)}
+.ust-grid li{position:relative;padding:var(--space-6) var(--space-5) var(--space-6);
+  border:1px solid var(--line,rgba(18,24,30,.12));border-radius:var(--r-sm);
+  background:var(--surface,#fff);overflow:hidden}
+.ust-grid li::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:var(--accent,#1f7a8c);transform:scaleY(0);transform-origin:top;transition:transform .45s cubic-bezier(.22,.61,.36,1)}
+.ust-grid li:hover::before{transform:scaleY(1)}
+.ust-grid h3{font-family:var(--font-display);font-size:1.16rem;letter-spacing:-.005em;margin:0 0 .5rem}
+.ust-grid p{margin:0;font-size:var(--text-sm);line-height:1.62;opacity:.82}
+@media(max-width:1000px){.ust-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.ust-grid{grid-template-columns:1fr}}
